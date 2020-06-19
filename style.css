@@ -5,14 +5,13 @@ body {
 }
 
 textarea{
-  height:80%;
-  width:90%;
+  height: 100%;
+  width: 100%;
   background: transparent;
   border: none;
   resize: none;
   color: #000000;
   border-left: 1px solid black;
-  
 }
 
 .jumbotron {
