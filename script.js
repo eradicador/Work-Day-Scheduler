@@ -11,6 +11,16 @@ $(".saveBtn").click(function () {
 });
 console.log(localStorage.getItem("9"));
 console.log(localStorage.getItem("10"));
+console.log(localStorage.getItem("11"));
+console.log(localStorage.getItem("12"));
+console.log(localStorage.getItem("1"));
+console.log(localStorage.getItem("2"));
+console.log(localStorage.getItem("3"));
+console.log(localStorage.getItem("4"));
+console.log(localStorage.getItem("5"));
+
+
+
 
 
 // get item from localStorage put it onto the page
