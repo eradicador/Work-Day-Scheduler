@@ -4,26 +4,36 @@ $('#currentDay').text(moment().format('dddd, MMMM Do YYYY'));
 
 // localStorage.setItem('key', 'value')
 $(".saveBtn").click(function () {
-  var textValue = $(".text-"+$(this).attr("data-block")).val();
+  var textValue = $(".text-" + $(this).attr("data-block")).val();
   var textKey = $(this).attr("data-block");
   console.log(textValue);
-  localStorage.setItem(textKey,textValue)
+  localStorage.setItem(textKey, textValue)
 });
 console.log(localStorage.getItem("9"));
 console.log(localStorage.getItem("10"));
 console.log(localStorage.getItem("11"));
 console.log(localStorage.getItem("12"));
-console.log(localStorage.getItem("1"));
-console.log(localStorage.getItem("2"));
-console.log(localStorage.getItem("3"));
-console.log(localStorage.getItem("4"));
-console.log(localStorage.getItem("5"));
+console.log(localStorage.getItem("1p"));
+console.log(localStorage.getItem("2p"));
+console.log(localStorage.getItem("3p"));
+console.log(localStorage.getItem("4p"));
+console.log(localStorage.getItem("5p"));
+// get item from localStorage put it on the page even if i refresh the browser
+ $('.text-9').val(localStorage.getItem('9'))
+ $('.text-10').val(localStorage.getItem('10'))
+ $('.text-11').val(localStorage.getItem('11'))
+ $('.text-12').val(localStorage.getItem('12'))
+ $('.text-1p').val(localStorage.getItem('1p'))
+ $('.text-2p').val(localStorage.getItem('2p'))
+ $('.text-3p').val(localStorage.getItem('3p'))
+ $('.text-4p').val(localStorage.getItem('4p'))
+ $('.text-5p').val(localStorage.getItem('5p'))
+ 
 
 
 
 
 
-// get item from localStorage put it onto the page
 // compare Times 
 // datablock has the times moment().hour()
 // if statement color for the hour
@@ -39,25 +49,3 @@ console.log(localStorage.getItem("5"));
 // WHEN I refresh the page
 // THEN the saved events persist
 
-// var saveBtn = document.querySelector("description");
-// saveBtn.addEventListener("submit", function (event) {
-//   event.preventDefault();
-//   init();
-//   storeDay();
-
-// function init() {
-//   // Get stored todos from localStorage
-//   // Parsing the JSON string to an object
-//   var storedDay = JSON.parse(localStorage.getItem("textarea"));
-
-//   // If todos were retrieved from localStorage, update the todos array to it
-//   if (storedDay !== null) {
-//     textarea = storedDay;
-//   }
-
-// }
-// var textarea = [];
-// function storedDay() {
-//   // Stringify and set "todos" key in localStorage to todos array
-  
-// }
