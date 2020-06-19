@@ -2,7 +2,7 @@
 //display current day using moment.js at the top of the calendar
 $('#currentDay').text(moment().format('dddd, MMMM Do YYYY'));
 
-// localStorage.setItem('key', 'value')
+// localStorage.setItem('key', 'value') saved key and value to local storage
 $(".saveBtn").click(function () {
   var textValue = $(".text-" + $(this).attr("data-block")).val();
   var textKey = $(this).attr("data-block");
@@ -28,9 +28,34 @@ console.log(localStorage.getItem("5p"));
  $('.text-3p').val(localStorage.getItem('3p'))
  $('.text-4p').val(localStorage.getItem('4p'))
  $('.text-5p').val(localStorage.getItem('5p'))
- 
+//  Each timeblock is color coded to indicate whether it is in a past, present, or future hour.
+moment().hour()
 
+function hourColor(){
+  var currentH = moment().hours();
+  console.log("Current Hour: "+currentH);
+  $(".row").each(function(){
+    var blockH = parseInt($(this).attr("id"));
+    console.log("Block Hour: "+blockH);
 
+    if(blockH < currentH){
+      $(this).addClass("past");
+       }
+
+       else if(blockH === currentH){
+         $(this).removeClass("past");
+         $(this).addClass("present");
+       }
+       else{
+        $(this).removeClass("past");
+        $(this).removeClass("present");
+        $(this).addClass("future");
+       }
+
+  })
+}
+
+hourColor();
 
 
 
