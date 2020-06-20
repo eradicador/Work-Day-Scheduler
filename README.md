@@ -10,10 +10,8 @@
 # link to deployed app
 https://github.com/eradicador/Work-Day-Scheduler
 
-
-
 # css file
-
+lines 9 and 10 added 100% height and width to textarea so it will cover the whole area 
 # html file
 
 # script.js file
