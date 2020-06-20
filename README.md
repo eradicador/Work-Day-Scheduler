@@ -1,8 +1,10 @@
 # Work Day Scheduler
 
 # screenshot
-<img src ="">
-# # link to deployed app
+<img src ="/assets/images/Screenshot (1).png"width="300">
+
+# link to deployed app
+https://github.com/eradicador/Work-Day-Scheduler
 
 
 # css file
