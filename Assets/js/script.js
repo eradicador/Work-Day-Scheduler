@@ -33,7 +33,6 @@ function hourColor() {
   $(".row").each(function () {
     //get the attribute id 
     var blockH = parseInt($(this).attr("id"));
-    console.log("Block Hour: " + blockH);
     //the `if` conditional statement is comparing if the blockH is less than the current hour   
     if (blockH < currentH) {
       $(this).addClass("past");
