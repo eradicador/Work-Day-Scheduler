@@ -5,7 +5,7 @@ body {
 }
 
 textarea{
-  /* added 100% height and width to it so it will cover the whole area */
+  /* added 100% height and width to textarea so it will cover the whole area */
   height: 100%;
   width: 100%;
   /* added padding to textarea to match the demo */
