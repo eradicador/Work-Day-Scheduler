@@ -74,8 +74,6 @@ textarea{
 }
 
 .saveBtn {
-  /* added padding to top so the save emoji stays center */
-  padding-top: 30px;
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
