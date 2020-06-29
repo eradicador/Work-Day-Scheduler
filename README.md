@@ -4,7 +4,7 @@
 This is an application for a simple calendar that allows the user to save events for each hour of the day from 9am to 5pm. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery. The application uses moment.js library to work with date and time. The user will be able to save events in every hour so the user can manage his/her busy schedule. the calendar/planner will show on the top the current date including the day. Each timeblock is color coded to indicate past, present or future hour. when the user clicks the time block next to the hour he/she will able to type an event and if the user clicks the save button for that timeblock he/she will be able to save that event into the `local storage` and if the user refresh the page or closes the browser the events will be there on the calendar time blocks.
 
 # screenshot
-<img src ="/assets/images/Screenshot.png" width="500">
+<img src ="./contents/images/Screenshot.png" width="500">
 
 # link to deployed app
 https://github.com/eradicador/Work-Day-Scheduler
